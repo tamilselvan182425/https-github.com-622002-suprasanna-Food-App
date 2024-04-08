@@ -1,0 +1,94 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+#Myform
+{
+    background-color:darkred;
+    height:900px;
+    width:500px;
+}
+.close
+{
+    float:right;
+  color:aliceblue;
+font-size: larger;
+    font-weight: 100;
+}
+.close:hover
+{
+    color:aqua;
+    cursor: pointer;
+}
+.div{
+    color:black;
+    background-color: aliceblue;
+    text-align: center;
+    height:20px;
+    width:50px;
+}
+.btn btn-secondary btn-sm
+{
+    color:black;
+    background-color: dimgray;
+    height:10px;
+    width:30px;
+    font-size: large;
+    align-items:center;
+}
+#submit
+{
+    text-align: center;
+}
+    </style>
+    </head>
+<body>
+<form action="form.php" method="post" id="Myform">
+        <div class="modal-body">
+            <span class="close">X</span>
+            <br>
+            <br>
+            <h3>REGISTRATION FORM:</h3>
+            <label for="name">Name:</label>
+            <input type="text"  id="#name"  placeholder="Enter Your Name"/>
+            <br>
+            <br>
+            <br>
+            <label for="E-Mail">E-Mail:</label>
+            <input type="text"  id="#E-mail" placeholder="Enter Your E-Mail ID"/>
+            <br>
+            <br>
+            <br>
+             <label for="passsword"></label> password:</label>
+            <input type="text"  id="#password" placeholder="Enter Your E-Mail password"/>
+            <br>
+            <br>
+           <br>
+            <button type="submit" id="#submit">SUBMIT</button>
+            </div>
+        </div>
+       </div>
+    <script>
+        const close=document.querySelector('.close');
+        const myModal=document.querySelector('#Myform');
+        btn.addEventListener('click',()=>{
+    myModal.style.display="block";
+     })
+     close.addEventListener('click',closemodal());
+     function closemodal(){
+        myModal.style.display="none;"
+     }
+    </script>
+</form>
+</body>
+</html>

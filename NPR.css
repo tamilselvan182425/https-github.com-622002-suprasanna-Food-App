@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+.h1
+{
+ color:darkslategray;
+ font-size: large;
+}
+.dropdown
+{
+font-size: medium;
+font-family: Arial, Helvetica, sans-serif;
+font-style: italic;
+}
+.dropdown-menu
+{
+    font-size: medium;
+    visibility: hidden;
+}
+.container-sm
+{
+ box-sizing: content-box;
+}
+.content
+{
+    color:black;
+}

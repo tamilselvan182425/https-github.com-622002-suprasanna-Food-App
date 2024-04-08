@@ -1,0 +1,181 @@
+<div class="login-page">
+  <div class="form">
+    <form class="login-form">
+        <h1>LOG IN</h1>
+        <p>Phone Number:</p>
+      <input type="text" placeholder="Enter Your PhoneNumber"/>
+<style>
+  .p{
+    height: 400px;
+  }
+  body{
+    align-items:center;
+     font-size: medium;
+     text-align: center;
+     width: 200px;
+     height:200px;
+
+  }
+</style>
+      <br>
+     <p>OTP</p>
+     <form>
+      <label class="sr-only" for="otp">OTP Code</label>
+      <div class="otp">
+        <input maxlength="4" inputmode="numeric" autocomplete="one-time-code" autofocus />
+      </div>
+    </form>
+    </form>
+    <style>
+      @import 'normalize.css';
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	align-content: center;
+	gap: 0.5rem;
+	min-height: 25vh;
+	font-family: 'SF Pro Text', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue',
+		Helvetica, Arial, sans-serif, system-ui;
+	color-scheme: dark only;
+	background: hsl(0 0% 2%);
+	color: hsl(0 0% 98%);
+}
+
+p {
+	text-align: center;
+	margin: 0;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 0px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+.otp {
+	--radius: 5px;
+	position: relative;
+	font-size:25px;
+}
+
+.otp:focus-within {
+	--active: 1;
+}
+
+.otp::after {
+	content: '';
+	position: absolute;
+	height: 50px;
+	left: 1ch;
+	right: 1ch;
+	z-index: 2;
+	border: 1px solid hsl(0 0% 100% / 0.25);
+	border-radius: var(--radius);
+	pointer-events: none;
+}
+
+.otp::before {
+	content: '';
+	width: 25px;
+	height: 50px;
+	border: 2px solid hsl(0 0% 100% / 1);
+	position: absolute;
+	left: 1ch;
+	z-index: 3;
+	opacity: var(--active, 0);
+	pointer-events: none;
+	border-radius: calc(var(--rl) * var(--radius)) calc(var(--rr) * var(--radius))
+		calc(var(--rr) * var(--radius)) calc(var(--rl) * var(--radius));
+}
+
+.otp input {
+	letter-spacing: 1ch;
+	font-feature-settings: 'tnum';
+	font-variant: tabular-nums;
+	font-family: monospace;
+	font-size:50px;
+	border: 0;
+	line-height: 1;
+	text-indent: 1.45ch;
+	font-weight: 100;
+	clip-path: inset(0 1ch 0 1ch);
+	background: transparent;
+	height: 2ch;
+	caret-color: red;
+	mask: linear-gradient(90deg, white 53.5%, transparent 54%) 1.45ch 50% / 2ch
+		80% repeat-x;
+}
+
+.otp [maxlength='4'] {
+	width: calc(5 * 2ch);
+}
+.otp [maxlength='5'] {
+	width: calc(6 * 2ch);
+}
+.otp [maxlength='6'] {
+	width: calc(7 * 2ch);
+}
+
+.otp:has([maxlength="4"])::before {
+	width: calc((100% - 2ch) / 4);
+	translate: min(calc(var(--index) * 100%), 300%) 0;
+}
+.otp:has([maxlength="4"])::after {
+	background: linear-gradient(
+				90deg,
+				transparent 0 calc(100% - 1px),
+				hsl(0 0% 100% / 0.25) calc(100% - 1px) 100%
+			)
+			0 0 / 25% 100% no-repeat,
+		linear-gradient(
+				90deg,
+				transparent 0 calc(100% - 1px),
+				hsl(0 0% 100% / 0.25) calc(100% - 1px) 100%
+			)
+			33% 0 / 25% 100% no-repeat,
+		linear-gradient(
+				90deg,
+				transparent 0 calc(100% - 1px),
+				hsl(0 0% 100% / 0.25) calc(100% - 1px) 100%
+			)
+			66% 0 / 25% 100% no-repeat;
+}
+.otp:has([maxlength="5"])::before {
+	width: calc((100% - 2ch) / 5);
+	translate: min(calc(var(--index) * 100%), 400%) 0;
+}
+    </style>
+  </div>
+  <script>
+   /**
+ * Snippet of code to update the highlight index
+ * */
+
+const otp = document.querySelector('.otp')
+const input = otp.querySelector('input')
+
+const update = () => {
+  otp.style.setProperty('--rl', input.selectionStart === 0 ? 1 : 0)
+  otp.style.setProperty('--rr', input.selectionStart >= input.maxLength - 1 ? 1 : 0)
+  otp.style.setProperty('--index', input.selectionStart)
+}
+
+input.addEventListener('keyup', update)
+input.addEventListener('click', update)
+input.addEventListener('focus', update)
+update()
+  </script>
+  <button type="button">Login</button>
+</div>

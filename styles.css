@@ -1,0 +1,49 @@
+.navbar--logo
+{
+  font-size:xx-large;
+    width: 170px;
+    height:40px;
+    background-position: center;
+    background-image: none;
+   border-color: #555;
+    width:10px;
+    height:50px;
+    color: brown;
+}
+h1
+{
+    text-align: center;
+   text-decoration: solid;
+    background-position: center;
+  font-size:xx-large;
+  font-family: 'Courier New', Courier, monospace;
+ color:black;
+}
+.NavbarNavDropdown
+{
+  text-align: left;
+background-attachment:local;
+position:right;
+background-size: contain;
+background-repeat: no-repeat;
+}
+.nav-item.nav-item:hover
+{
+  text-align: left;
+  background-color: grey;
+  color:black;
+  text-decoration: line-through;
+}
+.item
+{
+  text-align: left;
+  font-size: medium;
+  font-family: 'Courier New', Courier, monospace;
+}
+.menu
+{
+  text-align: left;
+  font-size: medium;
+  font-family: 'Courier New', Courier, monospace;
+  color:black;
+}
