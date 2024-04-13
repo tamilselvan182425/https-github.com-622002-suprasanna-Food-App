@@ -13,5 +13,4 @@ const dataSchema = new schema({
     timestamp: true 
 })
 
-
 module.exports = mongoose.model('Orders',dataSchema);
