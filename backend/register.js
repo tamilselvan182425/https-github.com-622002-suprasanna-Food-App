@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 // Connect to MongoDB
 const mongoHost = process.env.HOST || "localhost";
 const mongoPort = process.env.PORT || "27017";
-const mongoUser = process.env.HOST || "user";
-const mongoPass = process.env.PORT || "pass";
+const mongoUser = process.env.USER || "user";
+const mongoPass = process.env.PASS || "pass";
 mongoose.connect(
   `mongodb://${mongoUser}:${mongoPass}@${mongoHost}:${mongoPort}/myapp?authSource=admin`,
   {
