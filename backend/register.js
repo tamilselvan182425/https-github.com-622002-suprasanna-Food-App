@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 // Connect to MongoDB
 const mongoHost = process.env.HOST || "localhost";
-const mongoPort = process.env.PORT || "27017";
+const mongoPort = process.env.MONGO_PORT || "27017";
 const mongoUser = process.env.USER || "user";
 const mongoPass = process.env.PASS || "pass";
 mongoose.connect(
