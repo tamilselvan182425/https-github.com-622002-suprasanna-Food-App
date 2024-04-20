@@ -1,45 +1,46 @@
-const express = require ('express');
-const mongoose = require ('mongoose');
-const cors = require ('cors');
+<script>
+  const navbar=document.querySelector(".navbar");
+  let lastScrollTop=0;
+  window.addEventListener("scroll",
+  ()=>{
+    var {pageXOffset } =window;
+    {passive:true}
+    }
+  );
+    const clearInput = () => {
+      const input = document.getElementsByTagName("input")[0];
+      input.value = "";
+    const clearBtn = document.getElementById("clear-btn");
+    clearBtn.addEventListener("click", clearInput);
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on("click", function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-require('dotenv').config();
+          // Store hash
+          var hash = this.hash;
 
-const Orders = require ('./modals/Form.modal');
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            }
+          );
+        } // End if
+      });
+    });
 
-const app = express();
-
-const URL = process.env.ATLAS_URL;
-
-app.use(cors())
-
-app.use(express.json())
-mongoose.set('strictQuery', false);
-
-mongoose.connect(URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
-
-
-const connection = mongoose.connection;
-
-connection.once('open',() => {
-    console.log('mongoose db connected successfully...!!!')
-})
-
-
-app.post('/Orders',async(req,res) =>{
-    const {UserName,phoneNumber,email,address,LandMark,PinCode} = req.body;
-   const newOrders = new Orders({UserName,phoneNumber,email,address,LandMark,PinCode});
-
-   await newOrders.save();
-})
-
-
-
-
-
-
-app.listen("8001", () => {
-    console.log("Server is running on port 8001");
-  });
+  </script>
