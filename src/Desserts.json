@@ -1,0 +1,60 @@
+[{
+    
+    "id": 1,
+    "name": "Daifuku",
+    "price": 10.99,
+    "description":"",
+    "imageUrl": "https://www.justonecookbook.com/wp-content/uploads/2022/02/Japanese-Glass-Noodle-Soup-Harusame-Soup-6552-I.jpg"
+  },
+{
+
+    "id": 1,
+    "name": "Dango",
+    "price": 10.99,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Daifuku_1.jpg/225px-Daifuku_1.jpg"
+  },
+{
+
+    "id": 1,
+    "name": "Kuzumochi",
+    "price": 10.99,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Mitarashi_dango_by_denver935.jpg/225px-Mitarashi_dango_by_denver935.jpg"
+  },
+{
+
+    "id": 1,
+    "name": "Manjū",
+    "price": 10.99,
+    "description":"",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Carinto_manjyu.JPG/225px-Carinto_manjyu.JPG"
+  },
+{
+
+    "id": 1,
+    "name": "Monaka",
+    "price": 10.99,
+    "description":"",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Kimonaka.jpg/225px-Kimonaka.jpg"
+  },
+{
+
+    "id": 1,
+    "name": "Namagashi",
+    "price": 10.99,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Namagashi.jpg/225px-Namagashi.jpg"
+  },
+{
+
+    "id": 1,
+    "name": "Warabimochi",
+    "price": 10.99,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Kurumi_mochi.jpg/225px-Kurumi_mochi.jpg"
+  },
+{
+
+    "id": 1,
+    "name": "Dorayaki",
+    "price": 10.99,
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Dorayaki_001.jpg/450px-Dorayaki_001.jpg"
+  }
+]

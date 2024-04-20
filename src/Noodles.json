@@ -1,0 +1,52 @@
+[{
+    
+    "id": 1,
+    "name": "Udon noodles",
+    "price": 10.99,
+    "description":"",
+    "imageUrl": "https://www.kent.co.in/blog/wp-content/uploads/2017/05/Udon-300x200.jpg"
+  },
+{
+
+    "id": 1,
+    "name": "Ramen ",
+    "price": 10.99,
+    "imageUrl": "https://www.kent.co.in/blog/wp-content/uploads/2017/05/Ramen-300x199.jpg"
+  },
+{
+
+    "id": 1,
+    "name": "Yakisoba noodles",
+    "price": 10.99,
+    "imageUrl": "https://cdn.momsdish.com/wp-content/uploads/2020/05/Simple-Yakisoba-Noodles-Recipe-019-450x450.jpg"
+  },
+{
+
+    "id": 1,
+    "name": "Soba noodles",
+    "price": 10.99,
+    "description":"",
+    "imageUrl": "https://www.kent.co.in/blog/wp-content/uploads/2017/05/Soba-Noodles-300x225.jpg"
+  },
+{
+
+    "id": 1,
+    "name": "Egg Noodles",
+    "price": 10.99,
+    "imageUrl": "https://www.kent.co.in/blog/wp-content/uploads/2017/05/Egg-Noodles-300x200.jpg"
+  },
+{
+
+    "id": 1,
+    "name": "Rice Stick Noodles",
+    "price": 10.99,
+    "imageUrl": "https://www.kent.co.in/blog/wp-content/uploads/2017/05/rice-noodles-300x200.jpg"
+  },
+{
+
+    "id": 1,
+    "name": "Harusame Noodles",
+    "price": 10.99,
+    "imageUrl": "https://www.kent.co.in/blog/wp-content/uploads/2017/05/Harusame-1.jpg"
+  }
+]

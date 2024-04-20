@@ -1,0 +1,45 @@
+[{
+    
+    "id": 1,
+    "name": "",
+    "price": 10.99,
+    "description":"Gyukatsu",
+    "imageUrl": "https://gurunavi.com/en/japanfoodie/article/katsu/img/04_Katsu.jpg"
+  },
+{
+
+    "id": 1,
+    "name": "Salmon Katsu",
+    "price": 10.99,
+    "imageUrl": "https://gurunavi.com/en/japanfoodie/article/katsu/img/05_Katsu.jpg"
+  },
+{
+
+    "id": 1,
+    "name": "Katsu Sando /Burger",
+    "price": 10.99,
+    "imageUrl": "https://gurunavi.com/en/japanfoodie/article/katsu/img/12_Katsu.jpg"
+  },
+
+{
+
+    "id": 1,
+    "name": "Tonkatsu",
+    "price": 10.99,
+    "imageUrl": "https://gurunavi.com/en/japanfoodie/article/katsu/img/01_Katsu.jpg"
+  },
+{
+
+    "id": 1,
+    "name": "Menchikatsu",
+    "price": 10.99,
+    "imageUrl": "https://gurunavi.com/en/japanfoodie/article/katsu/img/02_Katsu.jpg"
+  },
+{
+
+    "id": 1,
+    "name": "Chicken Katsu",
+    "price": 10.99,
+    "imageUrl": "https://gurunavi.com/en/japanfoodie/article/katsu/img/03_Katsu.jpg"
+  }
+]

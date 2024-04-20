@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "name": "Rice",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYCGT5qRuB-wDDVHoPuvIBRpnhwtZYC3k7qQ&s"
+    },
+    {
+      "id": 2,
+      "name": "Noodles",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJlLu32d2tFt-x1RlY2kOdoo67c2uO5VoL-w&s"
+    },
+    {
+      "id": 3,
+      "name": "Cutlet",
+      "imageUrl": "https://www.nomss.com/wp-content/uploads/2023/04/Tonkatsu-Japanese-Pork-Cutlet-Nomss-sq-1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Soup",
+      "imageUrl": "https://www.crowdedkitchen.com/wp-content/uploads/2020/08/vegan-miso-soup.jpg"
+    },
+    {
+      "id": 5,
+      "name": "HotPots",
+      "imageUrl": "https://static.wixstatic.com/media/e26ec3_e7714b7dc0b24eef9f883aff157a0e44~mv2.jpg/v1/fill/w_980,h_961,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e26ec3_e7714b7dc0b24eef9f883aff157a0e44~mv2.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Desert",
+      "imageUrl": "https://wearenotmartha.com/wp-content/uploads/Sweet-Potato-Ice-Cream-Featured-1.jpg"
+    }
+]
