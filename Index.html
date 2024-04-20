@@ -1,0 +1,900 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USER APP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="bootstrap.scss"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css2.css"/>
+    <link  rel="stylesheet" href="file:///C:/Users/Apex%20informatics/OneDrive/Documents/Desktop/ReactApp/.vscode/React-course/components/Navbar.html">
+    <!---update-->  
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ///////////..utility classes../////////// */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #16a083;
+}
+
+.btn-primary:hover {
+  background: #117964;
+}
+/*navbar*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display:contents;
+  align-content:flex-end;
+}
+
+nav ul li a {
+    display:contents;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    align-items: end;
+}
+
+nav ul li a:hover {
+    color:yellowgreen;
+}
+/* ............//// Showcase styling ////......... */
+
+.showcase-area {
+  height:35vh;
+  width: 1500px;
+  background: linear-gradient(
+      rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.336)
+    ),
+    url("https://www.cypressgreen.in/blog/wp-content/uploads/2021/03/food-2048x1366.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.showcase-container {
+  display:inline-block;
+  flex-direction: row;
+  align-items: left;
+justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+}
+#home
+{
+  font-size:large;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover input,
+form:valid{
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input,
+form:valid input{
+    display: block;
+}
+
+form:hover .fa,
+form:valid .fa{
+    background: #07051a;
+}
+
+
+a {
+  display: none;
+  position: absolute;
+  top: 70px;
+  bottom:0;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  color: rgb(107, 94, 94);
+  text-align: center; 
+  width: 100%;
+}
+
+form:valid a {
+  display: block;
+}
+
+/* ......//about us//...... */
+
+#about {
+  padding: 50px 0;
+  background-color: #f5f5f7;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about h2 {
+  font-size: 2.3rem;
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+#about .small {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.about-img {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-text {
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+  transform: translate(-150%);
+  animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-img img {
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+  background-color: #fff;
+}
+/* ..........////Food category///........... */
+
+#food {
+  padding: 5rem 0 10rem 0;
+}
+
+#food h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.food-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f7;
+}
+
+.food-container img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+.img-container {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.img-content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.img-content h3 {
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.img-content a {
+  font-size: 1.2rem;
+}
+
+.img-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.871);
+  opacity: 0;
+  z-index: 1;
+
+  transform: scaleY(0);
+  transform-origin: 100% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.img-container:hover::after {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.img-container:hover .img-content {
+  opacity: 1;
+  top: 40%;
+}
+
+/* .........../Food Menu/............ */
+
+.food-menu-heading {
+  text-align: center;
+  font-size: 3.4rem;
+  font-weight: 400;
+  color:#000;
+}
+
+.food-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px 30px 0px;
+}
+.food-menu-container img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.food-menu-item {
+  display:flex;
+  flex: 1 1 600px;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+.img-container {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.img-content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.img-content h3 {
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.img-content a {
+  font-size: 1.2rem;
+}
+
+.food-description {
+  margin: auto 1.5rem;
+}
+
+.food-title a{
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #444;
+}
+
+.food-description p {
+  font-size: 1.4rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.food-description .food-price {
+  color: #504a4c;
+  font-weight: 700;
+}
+.food-menu-item
+{
+  color:#000;
+  font-size: medium;
+  font-style: italic;
+ font-display:flex;
+}
+.food-menu-item-heading 
+{
+  color:#000;
+  font-size: medium;
+  font-style: italic;
+ font-display:flex;
+}
+.food-menu-items li
+{
+  color:#000;
+  font-size: medium;
+  font-style: italic;
+ font-display:flex;
+}
+.food-title a
+{
+  color:#16a083;
+  font-size:medium;
+}
+
+.img-container:hover::after {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.img-container:hover .img-content {
+  opacity: 1;
+  top: 40%;
+}
+/* ........ Contact Us........... */
+
+#contact {
+  padding: 5rem 0;
+  background: rgb(226, 226, 226);
+}
+
+.contact-container {
+  display: flex;
+  background: #fff;
+}
+
+.contact-img {
+  width: 50%;
+}
+
+.contact-img img {
+  display: block;
+  height: 400px;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.form-container {
+  padding: 1rem;
+  width: 50%;
+  margin: auto;
+}
+
+.form-container input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding: 1rem 0;
+  box-shadow: none;
+  outline: none;
+  margin-bottom: 1rem;
+  color: #444;
+  font-weight: 500;
+}
+
+.form-container textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  color: #444;
+  outline: none;
+  padding: 1rem 0;
+  resize: none;
+}
+
+.form-container h2 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1rem;
+  margin-top: -1.2rem;
+}
+
+.form-container a {
+  font-size: 1.3rem;
+}
+
+#footer h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2.6rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgb(65, 65, 65);
+}
+#submit
+{
+  font-size: medium;
+  background-color: #ddd;
+  color:#666;
+  font-style: italic;
+}
+/* ......../ media query /.......... */
+
+@media (max-width: 768px) {
+  .navbar {
+    font-size: medium;
+    color:#000;
+  }
+  .logo {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 2rem;
+  }
+  /* ......./ food /......... */
+
+  .food-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .food-type:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  .food-type {
+    box-shadow: 5px 5px 10px 0 #805f5f;
+  }
+
+  .img-container {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 65%;
+  }
+
+  .navbar-nav.menu-items li{
+      font-size: 1.6rem;
+  }
+  .food-menu-container img {
+    margin: auto;
+  }
+
+  .food-menu-item {
+    flex-direction: column;
+    text-align: center;
+  }
+.food-description
+{
+  display: flexbox;
+  text-align: justify;
+ color:#000;
+}
+.food-title a
+{
+  color:#333;
+  font-size: medium;
+}
+  .form-container {
+    width: 90%;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-img {
+    width: 90%;
+    margin: 3rem auto;
+  }
+
+  .logo {
+    position: absolute;
+    top: 06px;
+    right: 15px;
+    font-size: 3rem;
+    font-style: oblique;
+    font-display:inherit;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .img-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .img-container .btn {
+    font-size: 0.7rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .showcase-area {
+    height: 50vmax;
+  }
+}
+ </style>
+ <link rel="stylesheet" href="styles.css"/>
+ <link rel="stylesheet" href="styles.css2.css"/>
+</head>
+    <body>
+      <h1>USER APP</h1>
+      <!-- Nav tabs -->
+      <nav class="navbar navbar-expand-lg fixed top navbar-dark bg-dark">
+        <div class="container">
+       <a href="Index6.html" class="navbar-brand">
+       </a>
+<button class="navbar-toggler"
+ type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item">
+      <a href="Index6.html" class="nav-link fw-semibold">Home</a>
+      <li class="nav-item">
+        <a href="file:///C:/Users/Apex%20informatics/OneDrive/Documents/Desktop/ReactApp/.vscode/React-course/components/login-page.html" class="nav-link fw-semibold">Login</a>
+        <li class="nav-item">
+          <a href="" class="nav-link fw-semibold">About</a>
+          <li class="nav-item">
+            <a href="file:///C:/Users/Apex%20informatics/OneDrive/Documents/Desktop/ReactApp/.vscode/React-course/components/Register.html" class="nav-link fw-semibold">Register</a>            
+    </li>
+  </ul>
+</div>
+        </div>
+      </nav>
+    <section class="showcase-area" id="showcase">
+      <div class="showcase-container">
+        <h1 class="main-title" id="home">Let food be the medicine and medicine be the food.</h1>
+      </div>
+      </section>
+    <section id="about">
+      <div class="about-wrapper container">
+        <div class="about-text">
+          <p class="small">About Us</p>
+          <h2>There is no love greater than the love of food.</h2>
+          <p>
+            We provide you the most delicious and healthy food  with alittle bit of twists and turns which will make you experience the best food :) 
+           </p>
+        </div>
+          </div>
+        </section>
+        <div class="about-img">
+          <img src="https://wallpapercave.com/wp/wp3724325.jpg" alt="food" />
+        </div>
+      </div>
+    </section>
+    <section id="food">
+      <h2>Food according to mood</h2>
+      <div class="food-container container">
+        <div class="food-type Breakfast">
+          <div class="img-container">
+            <img src="https://wallpapercave.com/wp/wp1913073.jpg" alt="error" />
+            <div class="img-content">
+              <a
+                href="file:///C:/Users/Apex%20informatics/OneDrive/Documents/Desktop/ReactApp/.vscode/React-course/components/NPR2.html"
+                class="btn btn-secondary">Diet</a> 
+            </div>
+          </div>
+        </div>
+        <div class="food-type Lunch">
+          <div class="img-container">
+            <img src="https://wallpaperaccess.com/full/1843937.jpg" alt="error" />
+            <div class="img-content">
+              <a
+                href="file:///C:/Users/Apex%20informatics/OneDrive/Documents/Desktop/Food/NPR3.html"
+                class="btn btn-secondary">Feast</a>
+            </div>
+          </div>
+        </div>
+        <div class="food-type grin">
+          <div class="img-container">
+            <img src="https://communities.dmcihomes.com/wp-content/uploads/2014/02/dinner-date.jpg" alt="error" />
+            <div class="img-content">
+              <a
+                href="file:///C:/Users/Apex%20informatics/OneDrive/Documents/Desktop/Food/NPR.html"
+                class="btn btn-secondary"
+                target="blank">Party</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="food-menu">
+      <h2 class="food-menu-heading">Food Menu</h2>
+      <div class="food-menu-container container">
+          <div class="food-menu-item">
+            <div class="img-container">
+              <img src="https://th.bing.com/th?id=OIP.ONc6eMZFBi-K4qTqdxnoeAHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt="error" />
+              <div class="img-content">
+                <a
+                  href="file:///C:/Users/Apex%20informatics/OneDrive/Documents/Desktop/Food/Italian%20staters.html"
+                  class="btn btn-secondary"
+                  target="blank">ITALIAN</a>
+              </div>
+            </div>
+              </div>
+              <div class="food-description">
+                  <p>
+                      Italian cuisine includes deeply rooted traditions common to the whole country,
+                      as well as all the regional gastronomies, different from each other, especially between the north, the centre and the 
+                      south of Italy, which are in continuous exchange.
+                  </p>
+          </div>
+        </div>
+      <div class="food-menu-container container">
+        <div class="food-menu-item">
+          <div class="img-container">
+            <img src="https://th.bing.com/th?id=OIP.zc0h6xMf0oA-5t0dKYLEGgHaFF&w=301&h=207&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt="error" />
+            <div class="img-content">
+              <a
+                href="file:///C:/Users/Apex%20informatics/OneDrive/Documents/Desktop/Food/chinese.html"
+                class="btn btn-secondary"
+                target="blank">CHINESE</a>
+            </div>
+          </div>
+            </div>
+            <div class="food-description">
+                <p>
+                    Chinese cuisine comprises cuisines originating from China, as well as from Chinese people from other parts of the world
+                </p>
+            </div>
+        </div>
+    </div>
+        <div class="food-menu-container container">
+        <div class="food-menu-item">
+          <div class="img-container">
+            <img src="https://th.bing.com/th?id=OIP.GjIwCh89aXCNSbCMbriWkwHaE7&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt="error" />
+            <div class="img-content">
+              <a
+                href="file:///C:/Users/Apex%20informatics/OneDrive/Documents/Desktop/Food/Breakfast.html"
+                class="btn btn-secondary"
+                target="blank">INDIAN</a>
+            </div>
+          </div>
+            </div>
+          <div class="food-description">
+            <p>
+                Indian food is also heavily influenced by religion, in particular Hinduism and Islam, cultural choices and traditions.   
+            </p>
+          </div>
+        </div>
+        </div>
+        <div class="food-menu-container container">
+        <div class="food-menu-item">
+          <div class="img-container">
+            <img src="https://th.bing.com/th?id=OIP.n84D7bnDl385ys2qB8Hw2gHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt="error" />
+            <div class="img-content">
+              <a
+                href="file:///C:/Users/Apex%20informatics/OneDrive/Documents/Desktop/Food/Thai.html"
+                class="btn btn-secondary"
+                target="blank">THAI</a>
+            </div>
+          </div>
+            </div>
+          <div class="food-description">
+                <p>Thai cooking places emphasis on lightly prepared dishes with strong aromatic components and a spicy edge.</p>
+          </div>
+        </div>
+        </div>
+        <div class="food-menu-container container">
+        <div class="food-menu-item">
+          <div class="img-container">
+            <img src="https://th.bing.com/th?id=OIP.JVRc9i2uhaeEFjDvccQ4NQAAAA&w=216&h=288&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt="error" />
+            <div class="img-content">
+              <a
+                href="https://www.goggle.com"
+                class="btn btn-secondary"
+                target="blank">JAPNESE</a>
+            </div>
+          </div>
+            </div>
+          <div class="food-description">
+            <p>
+                Japanese cuisine encompasses the regional and traditional foods of Japan, which have developed through centuries of political, economic, and social changes.
+            </p>
+          </div>
+        </div>
+        </div>
+        <div class="food-menu-container container">
+        <div class="food-menu-item">
+          <div class="img-container">
+            <img src="https://th.bing.com/th?id=OIP.jO7wckBnRYDFlIWL6pDOLgHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt="error" />
+            <div class="img-content">
+              <a
+                href="fhttps://www.goggle.com"
+                class="btn btn-secondary"
+                target="blank">French</a>
+            </div>
+          </div>
+            </div>
+          <div class="food-description">
+            <p>
+                French cuisine is the cooking traditions and practices from France. In the 14th century, Guillaume Tirel, a court chef known as "Taillevent", wrote Le Viandier, one of the earliest recipe collections of medieval France
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-container container">
+        <div class="contact-img">
+          <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
+
+        </div>
+    </section>
+  </body>
+  <!-- 
+    .................../ JS Code for smooth scrolling /...................... -->
+<script>
+  const navbar=document.querySelector(".navbar");
+  let lastScrollTop=0;
+  window.addEventListener("scroll",
+  ()=>{
+    var {pageXOffset } =window;
+    {passive:true}
+    }
+  );
+    const clearInput = () => {
+      const input = document.getElementsByTagName("input")[0];
+      input.value = "";
+    const clearBtn = document.getElementById("clear-btn");
+    clearBtn.addEventListener("click", clearInput);
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on("click", function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            }
+          );
+        } // End if
+      });
+    });
+
+  </script>
+</html>
